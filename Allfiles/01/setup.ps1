@@ -160,7 +160,7 @@ New-AzRoleAssignment -SignInName $userName -RoleDefinitionName "Storage Blob Dat
 
 # Upload files
 write-host "Loading data..."
-$storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $dataLakeAccountName -Tag $tags
+$storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $dataLakeAccountName
 $storageContext = $storageAccount.Context
 Get-ChildItem "./data/*.csv" -File | Foreach-Object {
     write-host ""
