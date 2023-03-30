@@ -84,6 +84,7 @@ $tags = @{
     Owner = "DanielMartin"
     Location = "Trondheim"
     Purpose = "Testing"
+}
 # Choose a random region
 Write-Host "Finding an available region. This may take several minutes...";
 $delay = 0, 30, 60, 90, 120 | Get-Random
