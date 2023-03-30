@@ -133,7 +133,11 @@ $Region = $locations.Get($rand).Location
 }
 Write-Host "Creating $resourceGroupName resource group in $Region ..."
 New-AzResourceGroup -Name $resourceGroupName -Location $Region | Out-Null
-
+$tags = @{
+    Owner = "DanielMartin"
+    Location = "Trondheim"
+    Purpose = "Testing"
+}
 # Create Synapse workspace
 $synapseWorkspace = "synapse$suffix"
 $dataLakeAccountName = "datalake$suffix"
