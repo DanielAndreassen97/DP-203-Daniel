@@ -81,7 +81,7 @@ foreach ($provider in $provider_list){
 Write-Host "Your randomly-generated suffix for Azure resources is $suffix"
 $resourceGroupName = "dp500-$suffix"
 $tags = @{
-    Owner = "Daniel"
+    Owner = "DanielMartin"
     Location = "Trondheim"
     Purpose = "Testing"
 # Choose a random region
