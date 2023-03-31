@@ -70,7 +70,11 @@
         "name": "[variables('adlsStorageAccountName')]",
         "location": "[variables('location')]",
         "dependsOn": [],
-        "tags": {},
+        "tags": {
+          "owner": "DanielMartin",
+          "location": "Trondheim",
+          "purpose": "Testing"
+        },
         "sku": {
           "name": "Standard_LRS"
         },
@@ -139,6 +143,11 @@
         ],
         "identity": {
           "type": "SystemAssigned"
+        },
+        "tags": {
+          "owner": "DanielMartin",
+          "location": "Trondheim",
+          "purpose": "Testing"
         },
         "properties": {
           "defaultDataLakeStorage": {
